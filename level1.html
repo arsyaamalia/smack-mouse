@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmackMouse</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+
+    <audio autoplay loop id="music">
+      <source src="audio/bgm.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="overlay-home">
+      <div class="home-play">
+        <center>
+          <button type="button" class="play" onclick="playSmack()" style="cursor: pointer">PLAY</button>
+        </center>
+      </div>
+    </div>
+
+    <div class="overlay-ready">
+      <center>
+        <div class="ready-level">
+          LEVEL
+          <span class="level-span">1</span>
+        </div>
+        <div class="ready-countdown">3</div>
+      </center>
+    </div>
+
+    <div class="overlay-nextlevel">
+      <div class="nextlevel-next">
+        <center>
+          <button type="button" class="next" onclick="nextSmack()" style="cursor: pointer">NEXT</button>
+        </center>
+      </div>
+    </div>
+
+    <div class="overlay-gameover">
+      <div class="gameover-retry">
+        <center>
+          <button type="button" class="retry" onclick="retrySmack()" style="cursor: pointer">RETRY</button>
+        </center>
+      </div>
+    </div>
+
+    <div class="overlay-winner">
+      <div class="winner-back">
+        <center>
+          <button type="button" class="back" onclick="backSmack()" style="cursor: pointer">BACK</button>
+        </center>
+      </div>
+    </div>
+
+    <div class="main-game">
+      <h1>SMACK MOUSE</h1>
+      <center>
+        <table>
+          <tr>
+            <td><div class="text-score">SCORE : </div></td>
+            <td><h2 class="papanskor">0</h2></td>
+          </tr>
+        </table>
+      </center>
+
+      <table class="table-2">
+        <tr>
+          <td style="width: 110px;"><div class="lvl-text">LEVEL</div></td>
+          <td><div class="lvl">1</div></td>
+        </tr>
+        <tr>
+          <td><div class="timer-text">TIME LEFT</div></td>
+          <td><div class="timer">0</div></td>
+        </tr>
+      </table>
+      
+      <div class="container">
+        <div class="tanah">
+          <div class="tikus"></div>
+          <div class="bom"></div>
+        </div>
+        <div class="tanah">
+          <div class="tikus"></div>
+          <div class="bom"></div>
+        </div>
+        <div class="tanah">
+          <div class="tikus"></div>
+          <div class="bom"></div>
+        </div>
+        <div class="tanah">
+          <div class="tikus"></div>
+          <div class="bom"></div>
+        </div>
+        <div class="tanah">
+          <div class="tikus"></div>
+          <div class="bom"></div>
+        </div>
+        <div class="tanah">
+          <div class="tikus"></div>
+          <div class="bom"></div>
+        </div>
+      </div>
+      <audio src="audio/tet.mp3" id="tet"></audio>
+      <audio src="audio/dug.mp3" id="dug"></audio>
+      <audio src="audio/timer.mp3" id="bgmtimer"></audio>
+      <audio src="audio/gameover.mp3" id="gameover"></audio>
+      <audio src="audio/success.mp3" id="gamewin"></audio>
+    </div>
+
+    <script src="js/script.js"></script>
+  
+  </body>
+</html>
